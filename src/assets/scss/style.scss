@@ -58,6 +58,9 @@ a{
 .flex-column{
   flex-direction: column;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 
 .flex-1{
   flex: 1;
@@ -123,5 +126,21 @@ button{
   &.active{
     border-bottom: 3px solid map-get($colors, 'white');
   }
+}
 
+//sprite
+.sprite{
+  background: url('../images/index.png') no-repeat 0 0;
+  background-size: 375px;
+  display: inline-block;
+  &.sprite-news{
+    width: 1.7692rem;
+    height: 1.5385rem;
+    background-position: 63.546% 15.517%;
+  }
+  &.sprite-arrow{
+    width: 0.7692rem;
+    height: 0.7692rem;
+    background-position: 38.577% 52.076%;
+  }
 }
