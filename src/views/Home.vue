@@ -31,7 +31,17 @@
       </div>
     </div>
 
-    
+    <m-list-card icon="read_icon_menu_n" title="新闻资讯" :categories="newsCats">
+      <template #items="{category}">
+        <div class="py-2" v-for="(news,i) in category.newsList" :key="i">
+          <span>[{{news.categoryName}}]</span>
+          <span>|</span>
+          <span>{{news.title}}</span>
+          <span>{{news.date}}</span>
+        </div>
+      </template>
+    </m-list-card>   
+
   </div>
 </template>
 
@@ -45,10 +55,51 @@
             delay: 3000
           },
           pagination: {
-            el: '.pagination-home',
-            
+            el: '.pagination-home'
           }
-        }
+        },
+        newsCats: [
+          {
+            name: '热门',
+            newsList: new Array(5).fill(1).map(v => ({
+              categoryName: '热门',
+              title: '2019Chinajoy王者PK赛，十大明星主播巅峰对决',
+              date: '08/03'
+            }))
+          },
+          {
+            name: '新闻',
+            newsList: new Array(5).fill(1).map(v => ({
+              categoryName: '新闻',
+              title: '2019Chinajoy王者PK赛，十大明星主播巅峰对决',
+              date: '08/03'
+            }))
+          },
+          {
+            name: '公告',
+            newsList: new Array(5).fill(1).map(v => ({
+              categoryName: '公告',
+              title: '2019Chinajoy王者PK赛，十大明星主播巅峰对决',
+              date: '08/03'
+            }))
+          },
+          {
+            name: '活动',
+            newsList: new Array(5).fill(1).map(v => ({
+              categoryName: '活动',
+              title: '2019Chinajoy王者PK赛，十大明星主播巅峰对决',
+              date: '08/03'
+            }))
+          },
+          {
+            name: '赛事',
+            newsList: new Array(5).fill(1).map(v => ({
+              categoryName: '赛事',
+              title: '2019Chinajoy王者PK赛，十大明星主播巅峰对决',
+              date: '08/03'
+            }))
+          },
+        ]  
       }
     }
   }

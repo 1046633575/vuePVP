@@ -11,7 +11,7 @@
         </div>
         <!-- 导航栏 -->
         <div class="bg-primary pt-3 pb-2">
-            <div class="nav text-white d-flex jc-around pb-1">
+            <div class="nav text-white nav-inverse jc-around pb-1">
                 <div class="nav-item active">
                     <router-link class="nav-link" tag="div" to="/">首页</router-link>
                 </div>
@@ -34,4 +34,3 @@ export default {
 <style>
 
 </style>
-    
