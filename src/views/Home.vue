@@ -34,13 +34,24 @@
     <m-list-card icon="read_icon_menu_n" title="新闻资讯" :categories="newsCats">
       <template #items="{category}">
         <div class="py-2 d-flex jc-between" v-for="(news,i) in category.newsList" :key="i">
-          <span>[{{news.categoryName}}]</span>
-          <span class="px-1">|</span>
-          <span class="flex-1 text-ellipsis pr-1">{{news.title}}</span>
-          <span>{{news.date}}</span>
+          <span class="text-info py-1">[{{news.categoryName}}]</span>
+          <span class="px-1 text-info py-1">|</span>
+          <span class="flex-1 text-ellipsis pr-2 fs-lg py-1">{{news.title}}</span>
+          <span class="fs-sm text-grey-1 py-1">{{news.date}}</span>
         </div>
       </template>
     </m-list-card>   
+
+    <m-list-card icon="card-hero" title="英雄列表" :categories="heroCats">
+      <template #items="{category}">
+        <div class="d-flex flex-wrap" style="margin: -0.5rem">
+          <div class="p-2 text-center" style="width: 20%" v-for="(hero,i) in category.heroes" :key="i">
+            <img class="w-100" :src="hero.avatar" alt="">
+            <div>{{hero.name}}</div>
+          </div>
+        </div>
+      </template>
+    </m-list-card> 
 
   </div>
 </template>
@@ -58,19 +69,29 @@
             el: '.pagination-home'
           }
         },
-        newsCats: []  
+        //新闻数据列表
+        newsCats: [],
+        //英雄数据列表
+        heroCats: [] 
       }
     },
     methods: {
       //获取新闻数据
       getNewsData(){
-        this.$http.get('./newsData.json').then((res) => {
+        this.$http.get('./data/newsData.json').then((res) => {
           this.newsCats = res.data;
+        })
+      },
+      //获取英雄数据
+      getHeroData(){
+        this.$http.get('./data/heroData.json').then(res => {
+          this.heroCats = res.data;
         })
       }
     },
     created(){
       this.getNewsData();
+      this.getHeroData();
     }
   }
 </script>
