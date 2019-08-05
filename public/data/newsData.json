@@ -2,27 +2,32 @@
     {
         "name": "热门",
         "newsList": [
-            {
+            {   
+                "id": 1000,
                 "categoryName": "公告",
                 "title": "7月31日体验服停机更新公告",
                 "date": "07/31"
             },
             {
+                "id": 1000,
                 "categoryName": "新闻",
                 "title": "《王者荣耀》公布 “天工”编辑器，即将上线王者模拟战",
                 "date": "08/02"
             },
             {
+                "id": 1000,
                 "categoryName": "活动",
                 "title": "炎炎夏日全新活动周 峡谷激战得好礼",
                 "date": "07/29"
             },
             {
+                "id": 1000,
                 "categoryName": "公告",
                 "title": "7月31日体验服停机更新公告",
                 "date": "07/27"
             },
             {
+                "id": 1000,
                 "categoryName": "新闻",
                 "title": "《王者荣耀》公布 “天工”编辑器，即将上线王者模拟战",
                 "date": "08/02"
@@ -33,26 +38,31 @@
         "name": "新闻",
         "newsList": [
             {
+                "id": 1000,
                 "categoryName": "新闻",
                 "title": "2019Chinajoy王者PK赛，十大明星主播巅峰对决",
                 "date": "07/31"
             },
             {
+                "id": 1000,
                 "categoryName": "新闻",
                 "title": "《王者荣耀》公布 “天工”编辑器，即将上线王者模拟战",
                 "date": "08/02"
             },
             {
+                "id": 1000,
                 "categoryName": "新闻",
                 "title": "2019Chinajoy王者PK赛，十大明星主播巅峰对决",
                 "date": "07/31"
             },
             {
+                "id": 1000,
                 "categoryName": "新闻",
                 "title": "《王者荣耀》公布 “天工”编辑器，即将上线王者模拟战",
                 "date": "08/02"
             },
             {
+                "id": 1000,
                 "categoryName": "新闻",
                 "title": "2019Chinajoy王者PK赛，十大明星主播巅峰对决",
                 "date": "07/31"
@@ -63,26 +73,31 @@
         "name": "公告",
         "newsList": [
             {
+                "id": 1000,
                 "categoryName": "公告",
                 "title": "7月31日体验服停机更新公告",
                 "date": "07/31"
             },
             {
+                "id": 1000,
                 "categoryName": "公告",
                 "title": "体验服【资格申请活动】即将开启",
                 "date": "08/02"
             },
             {
+                "id": 1000,
                 "categoryName": "公告",
                 "title": "7月31日体验服停机更新公告",
                 "date": "07/31"
             },
             {
+                "id": 1000,
                 "categoryName": "公告",
                 "title": "体验服【资格申请活动】即将开启",
                 "date": "08/02"
             },
             {
+                "id": 1000,
                 "categoryName": "公告",
                 "title": "7月31日体验服停机更新公告",
                 "date": "07/31"
@@ -93,26 +108,31 @@
         "name": "活动",
         "newsList": [
             {
+                "id": 1000,
                 "categoryName": "活动",
                 "title": "世界冠军杯 集卡赢壕礼活动公告",
                 "date": "07/31"
             },
             {
+                "id": 1000,
                 "categoryName": "活动",
                 "title": "炎炎夏日全新活动周 峡谷激战得好礼",
                 "date": "07/29"
             },
             {
+                "id": 1000,
                 "categoryName": "活动",
                 "title": "世界冠军杯 集卡赢壕礼活动公告",
                 "date": "07/31"
             },
             {
+                "id": 1000,
                 "categoryName": "活动",
                 "title": "炎炎夏日全新活动周 峡谷激战得好礼",
                 "date": "07/29"
             },
             {
+                "id": 1000,
                 "categoryName": "活动",
                 "title": "世界冠军杯 集卡赢壕礼活动公告",
                 "date": "07/31"
@@ -123,26 +143,31 @@
         "name": "赛事",
         "newsList": [
             {
+                "id": 1000,
                 "categoryName": "赛事",
                 "title": "你是赛评师：eStarPro强势进军世冠总决赛，深圳遭遇RW胜率有多少？",
                 "date": "08/31"
             },
             {
+                "id": 1000,
                 "categoryName": "赛事",
                 "title": "第二周五省齐开战，王者荣耀城市赛省赛进行中！",
                 "date": "08/25"
             },
             {
+                "id": 1000,
                 "categoryName": "赛事",
                 "title": "你是赛评师：eStarPro强势进军世冠总决赛，深圳遭遇RW胜率有多少？",
                 "date": "08/31"
             },
             {
+                "id": 1000,
                 "categoryName": "赛事",
                 "title": "第二周五省齐开战，王者荣耀城市赛省赛进行中！",
                 "date": "08/25"
             },
             {
+                "id": 1000,
                 "categoryName": "赛事",
                 "title": "你是赛评师：eStarPro强势进军世冠总决赛，深圳遭遇RW胜率有多少？",
                 "date": "08/31"

@@ -164,3 +164,10 @@ button{
     background-position: 38.577% 52.076%;
   }
 }
+
+//border
+@each $dir in (top,right,bottom,left) {
+  .border-#{$dir} {
+    border-#{$dir}: 1px solid $border-color;
+  }
+}
