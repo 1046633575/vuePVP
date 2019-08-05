@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <!-- 顶部广告 -->
-        <div class="bg-dark-2 py-2 px-3 d-flex ai-center">
+        <div class="topBar bg-dark-2 py-2 px-3 d-flex ai-center">
             <img src="../assets/logo.png" height="30">
             <div class="px-3 flex-1">
                 <div class="text-white">王者荣耀</div>
@@ -31,6 +31,10 @@ export default {
 
 }
 </script>
-<style>
-
+<style lang="scss">
+    .topBar{
+        position:sticky;
+        top: 0;
+        z-index: 9999;
+    }
 </style>
