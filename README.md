@@ -1,29 +1,10 @@
-# pvp
+### Vue 王者荣耀手机官网
 
-## Project setup
-```
-npm install
-```
+### 项目预览
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#### Vue、VueRouter、Swiper、Scss
 
-### Run your tests
-```
-npm run test
-```
+#### 此项目通过 scss 编写类样式，直接加类名修改 css 样式，大大减少项目中的 css 代码量。
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
