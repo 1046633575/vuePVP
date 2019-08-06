@@ -5,13 +5,13 @@
     <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
       <!-- slides -->
       <swiper-slide>
-        <img class="w-100" src="../assets/images/0357494396aaf611469a652edd548274.jpeg" alt="">
+        <img class="w-100" src="../assets/images/8fb39465b08fa0689fdf82ee29ef7dad.jpeg" alt="">
       </swiper-slide>
       <swiper-slide>
         <img class="w-100" src="../assets/images/0357494396aaf611469a652edd548274.jpeg" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img class="w-100" src="../assets/images/0357494396aaf611469a652edd548274.jpeg" alt="">
+        <img class="w-100" src="../assets/images/2a25b6e6ed97e750f73e8e71afc6c74a.jpeg" alt="">
       </swiper-slide>
       <!-- Optional controls -->
       <div class="swiper-pagination pagination-home text-right px-3 pb-1"  slot="pagination"></div> 
@@ -20,9 +20,9 @@
     <!-- 分类栏 -->
     <div class="nav-icons bg-white mt-3 text-center pt-3 text-dark-1">
       <div class="d-flex flex-wrap">
-        <div class="nav-item mb-3 " v-for="n in 10" :key="n">
-          <i class="sprite sprite-news"></i>
-          <div class="py-2">爆料站</div>
+        <div class="nav-item mb-3" v-for="(item,i) in iconCats" :key="i">
+          <i class="sprite" :class="`sprite-${item.icon}`"></i>
+          <div class="py-2">{{item.title}}</div>
         </div>
       </div>
       <div class="bg-light py-2 fs-sm">
@@ -53,6 +53,7 @@
       </template>
     </m-list-card> 
 
+    <div class="py-4 text-white"></div>
   </div>
 </template>
 
@@ -72,7 +73,9 @@
         //新闻数据列表
         newsCats: [],
         //英雄数据列表
-        heroCats: [] 
+        heroCats: [],
+        //图标数据列表
+        iconCats: []
       }
     },
     methods: {
@@ -87,11 +90,18 @@
         this.$http.get('./data/heroData.json').then(res => {
           this.heroCats = res.data;
         })
+      },
+      //获取图标数据
+      getIconData(){
+        this.$http.get('./data/icon.json').then(res => {
+          this.iconCats = res.data;
+        })
       }
     },
     created(){
       this.getNewsData();
       this.getHeroData();
+      this.getIconData();
     }
   }
 </script>

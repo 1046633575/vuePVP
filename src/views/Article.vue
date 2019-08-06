@@ -1,14 +1,15 @@
 <template>
-    <div class="container" v-if="model">
+    <div class="container" >
         <div class="d-flex ai-center py-3 px-2 border-bottom">
             <div class="iconfont icon-back" @click="goBack"></div>
             <strong class="flex-1 text-blue">
-                {{model.title}}s
+                {{data.title}}
             </strong>
             <div class="text-grey fs-xs">2019/08/05</div>
         </div>
-        <div class="body" v-html="model.body">
-        </div>
+        <div class="body text-dark-1" v-html="data.body"></div>
+        <div class="body text-dark-1" v-html="data.body"></div>
+        <div class="body text-dark-1" v-html="data.body"></div>
     </div>
 </template>
 
@@ -18,12 +19,14 @@ export default {
         id: { required : true }
     },
     data(){
-        model: null
+        return {
+            data: null
+        }  
     },
     methods: {
-        getModel(){
+        getData(){
             this.$http.get(`./data/article${this.id}.json`).then(res => {
-                this.model = res.data[0];
+                this.data = res.data[0];
             })    
         },
         goBack(){
@@ -31,13 +34,8 @@ export default {
         }
     },
     created(){
-        this.getModel();
+        this.getData();
     }
     
 }
 </script>
-
-<style>
-</style>
-
-

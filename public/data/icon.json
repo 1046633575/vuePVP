@@ -1,0 +1,42 @@
+[
+    {
+        "title": "爆料站",
+        "icon": "news"
+    },
+    {
+        "title": "故事站",
+        "icon": "story"
+    },
+    {
+        "title": "周边商城",
+        "icon": "mail"
+    },
+    {
+        "title": "体验服",
+        "icon": "test"
+    },
+    {
+        "title": "新人专区",
+        "icon": "newPeople"
+    },
+    {
+        "title": "荣耀·传承",
+        "icon": "book"
+    },
+    {
+        "title": "同人社区",
+        "icon": "community"
+    },
+    {
+        "title": "王者营地",
+        "icon": "local"
+    },
+    {
+        "title": "公众号",
+        "icon": "wechat"
+    },
+    {
+        "title": "版本介绍",
+        "icon": "edition"
+    }
+]

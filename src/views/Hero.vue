@@ -36,13 +36,13 @@
         <div>
             <div class="bg-white px-3">
                 <div class="nav d-flex jc-around py-3 border-bottom">
-                    <div class="nav-item" v-for="(item,i) in model.item" :key="i" :class="{active : active == i}" @click="$refs.list.swiper.slideTo(i)">
+                    <div class="nav-item" v-for="(item,i) in model.item" :key="i" :class="{active : active == i}" @click="$refs.list01.swiper.slideTo(i)">
                         <div class="nav-link ">{{item.name}}</div>
                     </div>
                 </div>
             </div>
         </div>
-        <swiper :options="{autoHeight : true}" ref="list" @slide-change="() => active = $refs.list.swiper.realIndex">
+        <swiper :options="{autoHeight : true}" ref="list01" @slide-change="() => active = $refs.list01.swiper.realIndex">
             <swiper-slide>
                 <div>
 
@@ -125,12 +125,12 @@
                         <div class="introduce text-dark-1">{{model.teamSkills}}</div>
                     </m-card>
 
-                    <m-card icon="read_icon_menu_n" title="英雄关系" class="border-bottom">
+                    <m-card icon="read_icon_menu_n" title="英雄关系" class="border-bottom heroCard">
                         <div>
                             <div class="fs-xl">最佳搭档</div>
                             <div class="d-flex flex-column pt-2">
                                 <div class="d-flex jc-between py-2" v-for="(item,i) in model.goodHero" :key="i">
-                                    <img width="50" height="50"  :src="item.img" alt="">
+                                    <img  :src="item.img" alt="">
                                     <span class="introduce text-dark-1 px-2">{{item.title}}</span>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                             <div class="fs-xl">被谁克制</div>
                             <div class="d-flex flex-column pt-2">
                                 <div class="d-flex jc-between py-2" v-for="(item,i) in model.badHero" :key="i">
-                                    <img width="50" height="50"  :src="item.img" alt="">
+                                    <img :src="item.img" alt="">
                                     <span class="introduce text-dark-1 px-2">{{item.title}}</span>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
                             <div class="fs-xl">克制谁</div>
                             <div class="d-flex flex-column pt-2">
                                 <div class="d-flex jc-between py-2" v-for="(item,i) in model.restraintHero" :key="i">
-                                    <img width="50" height="50"  :src="item.img" alt="">
+                                    <img :src="item.img" alt="">
                                     <span class="introduce text-dark-1 px-2">{{item.title}}</span>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                 </div>
             </swiper-slide>
             <swiper-slide class="bg-white">
-                <div class="p-3 ">error</div>
+                <div class="p-3 message">error</div>
             </swiper-slide>
         </swiper>
     </div>
@@ -233,6 +233,16 @@ export default {
             width: 100%;
             border-radius: 50%;
         }
+    }
+    .heroCard{
+        img{
+            width: 50px;
+            height: 50px;
+            
+        }
+    }
+    .message{
+        height: 500px;
     }
 }
 </style>
